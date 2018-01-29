@@ -63,18 +63,18 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="p-4">
-              <img class="img-fluid rounded-circle" src="./image/1.jpg" alt="" style="display: block; margin-left: auto; margin-right: auto;">
+              <img class="img-fluid rounded-circle" src="./image/pic/${imgUrl}" alt="" style="display: block; margin-left: auto; margin-right: auto;">
              </div>
            </div>
            <div class="col-lg-6">
              <div class="p-4">
-               <h2 class="display-4" style="text-align: center; color: rgba(0,0,0,0.7);  font-weight: bold;">신바람</h2>
-               <p style="text-align: center; font-style:italic;">좌우명 예시 좌우명입니다. 123 좌우명 예시 좌우명입니다. 123 좌우명 예시 좌우명입니다. 123</p>
+               <h2 class="display-4" style="text-align: center; color: rgba(0,0,0,0.7);  font-weight: bold;">${name}</h2>
+               <p style="text-align: center; font-style:italic;">${ment}</p>
              </div>
            </div>
          </div>
        </div>
-       <iframe src="https://www.youtube.com/embed/wozeaDc8F1k" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: -webkit-fill-available" frameborder="0" allowfullscreen></iframe>
+       <iframe src="https://www.youtube.com/embed/${url}" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: -webkit-fill-available" frameborder="0" allowfullscreen></iframe>
      </section>
            
            <!-- end -->
