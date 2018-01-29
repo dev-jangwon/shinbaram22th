@@ -20,9 +20,37 @@ $(".job").on('click',function(){
   $(".jobimage img").show();
   $(".jobcontents p").hide();
   var imageid=this.id.charAt(2);
-  $(".jobimage img").attr("src","./image/ighyun/i"+imageid+".jpg");
+
+  $(".jobimage img").attr("src","./image/content_image/i"+imageid+".png");
   var a=$(".jobcontents p")[imageid-1];
   $(a).show();
+  if(imageid==1){
+    $('.jobimage_title').text("자금운용");
+  }
+  else if(imageid==2){
+    $('.jobimage_title').text("글로벌");
+  }
+  else if(imageid==3){
+    $('.jobimage_title').text("디지털");
+  }
+  else if(imageid==4){
+    $('.jobimage_title').text("빅데이터");
+  }
+  else if(imageid==5){
+    $('.jobimage_title').text("IB");
+  }
+  else if(imageid==6){
+    $('.jobimage_title').text("리스크");
+  }
+  else if(imageid==7){
+    $('.jobimage_title').text("IT");
+  }
+  else if(imageid==8){
+    $('.jobimage_title').text("기업금융");
+  }
+  else if(imageid==9){
+    $('.jobimage_title').text("WM");
+  }
 
 });
 
