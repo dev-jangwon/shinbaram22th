@@ -9,6 +9,10 @@
     <meta name="author" content="">
 
     <title>신한은행 일반직 22기 신바람</title>
+   <!--  <style>
+      @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+      .font { font-family: 'Jeju Gothic', serif; }
+    </style> -->
 
     <!-- Bootstrap core CSS -->
     <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
-  <body id="page-top">
+  <body id="page-top" class="font">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav" style="background: rgba(0,0,0,.7) !important;">
