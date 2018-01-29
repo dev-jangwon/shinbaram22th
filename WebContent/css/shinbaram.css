@@ -375,19 +375,38 @@ section h3.section-subheading {
 }
 .container1{
   width:100%;
-  margin-top: 15%;
+  margin-top: 5%;
+  max-height: 900px;
   /*margin: 7% 0 0 20%;*/
 
 }
+.job, .nextbtn{
+  cursor: pointer;
+}
 .container2{
-  height: 150px;
+  height: 40%;
 }
 .container3{
-  height: 150px;
-  position: relative;
+  height: 30%;
+  /* position: relative; */
 }
 .container3 li{
   text-align: center;
+}
+.container4{
+  height:70%;
+}
+.jobimage{
+  /* float: left;
+  width: 40%; */
+}
+.jobimage img{
+  width:80%;
+  height:100%;
+}
+.jobcontents{
+ /*  float: left;
+  width: 60%; */
 }
 .input_container{
   margin-top: 2%;
@@ -395,6 +414,12 @@ section h3.section-subheading {
   width: 40%;
   float:right;
   margin: -15% 1% 0 0;
+}
+#gomovie{
+  padding:0.5rem;
+  width:100%;
+  background-color:#08070e;
+  color:white;
 }
 .backimage{
   background-size: cover;
@@ -418,26 +443,32 @@ section h3.section-subheading {
 li{
   list-style: none;
 }
-.jobinfo1 li{
+.jobinfo1, .jobinfo2{
+  height: 90%;
+}
+.jobinfo1 li, .jobinfo2 li{
 
   float: left;
   width:18%;
+  height: 80%;
+
 }
 .jobinfo2 li{
 
   float: left;
-  width:18%;
+  width:17%;
 }
 .job img{
   width: 100%;
+  height: 90%;
 }
 .job span{
-  margin-top: -10%;
-  font-size: 3vw;
+  margin-top: -30%;
+
 }
 li.nextbtn{
   margin-top: 5%;
-  width: 10%;
+  width: 5%;
 }
 .part1{
   float:left;
@@ -455,3 +486,4 @@ li.nextbtn{
      padding: 156px 0 100px;
    }
  }
+ 

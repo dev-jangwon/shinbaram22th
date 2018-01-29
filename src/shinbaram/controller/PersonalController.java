@@ -30,7 +30,7 @@ public class PersonalController extends HttpServlet {
 //		}
 //		resultOb.put("result", 1);
 //		writer.print(resultOb);
-		response.sendRedirect("video.html");
+		response.sendRedirect("video.jsp");
 		return;
 	}
 }
