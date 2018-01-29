@@ -20,6 +20,19 @@
   </head>
 
   <body id="page-top" class="font">
+	
+  	<!-- play music -->
+  	
+	<audio id="myAudio">
+  		<source src="./audio/Through_the_Night.mp3" type="audio/mpeg">
+	</audio>
+	<button class="stop_music" onclick="pauseAudio()" id="myBtn" title="stop music" style="display: block;">
+		<img src="./image/music_pause.png" style="width:30px;"/>
+	</button>
+	<button class="play_music" onclick="playAudio()" id="myBtn2" title="play music" style="display: none;">
+		<img src="./image/music_run.png" style="width:30px;"/>
+	</button>
+	
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav" style="background: rgba(0,0,0,.7) !important;">
         <div class="container">
@@ -394,6 +407,30 @@
     			$("#exampleModal3").modal('show');
     		});
     </script>
+    
+<script>
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+// music
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+    x.play();
+    document.getElementById("myBtn").style.display = "block";
+    document.getElementById("myBtn2").style.display = "none";
+} 
+
+function pauseAudio() { 
+    x.pause();
+    document.getElementById("myBtn").style.display = "none";
+    document.getElementById("myBtn2").style.display = "block";
+} 
+
+playAudio();
+</script>
 
     <!-- Custom JavaScript for this theme -->
     <!-- <script src="./js/scrolling-nav.js"></script> -->
