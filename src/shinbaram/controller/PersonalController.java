@@ -20,11 +20,21 @@ import org.w3c.dom.NodeList;
 public class PersonalController extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String name = (String) request.getParameter("name");
-		String birth = (String) request.getParameter("birth");
+		String name = "";
+		String birth = "";
+		
+		if((String) request.getParameter("name") != null) {
+			name = (String) request.getParameter("name");
+		}
+		if((String) request.getParameter("birth") != null) {
+			birth = (String) request.getParameter("birth");
+		}
+		
 		String ment = "";
 		String url = "";
 		String imgUrl = "";
+		String tmpName = "";
+		String tmpBirth = "";
 
 		try {
 
@@ -43,9 +53,18 @@ public class PersonalController extends HttpServlet {
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 
 					Element eElement = (Element) nNode;
-
-					if (name.equals(eElement.getElementsByTagName("name").item(0).getTextContent())
-							&& birth.equals(eElement.getElementsByTagName("birth").item(0).getTextContent())) {
+					
+					tmpName = "";
+					tmpBirth = "";
+					if(eElement.getElementsByTagName("name").item(0).getTextContent() != null) {
+						tmpName = eElement.getElementsByTagName("name").item(0).getTextContent();
+					}
+					
+					if(eElement.getElementsByTagName("birth").item(0).getTextContent() != null) {
+						tmpBirth = eElement.getElementsByTagName("birth").item(0).getTextContent();
+					}
+					
+					if (name.equals(tmpName) && birth.equals(tmpBirth)) {
 						ment = eElement.getElementsByTagName("ment").item(0).getTextContent();
 						url = eElement.getElementsByTagName("url").item(0).getTextContent();
 						imgUrl = birth + "_" + name + ".jpg";
@@ -62,7 +81,7 @@ public class PersonalController extends HttpServlet {
 		request.getSession().setAttribute("ment", ment);
 		request.getSession().setAttribute("imgUrl", imgUrl);
 
-		if (!url.isEmpty()) {
+		if (url != null && !url.equals("")) {
 			response.sendRedirect("video.jsp");
 		} else {
 			response.sendRedirect("main.html");
