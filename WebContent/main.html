@@ -60,6 +60,11 @@
 	      <button id="popmovie" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="color:white">
 	            부모님을 위한 영상편지
 	      </button>
+	      <br>
+	      <br>
+	      <button id="popes" class="btn btn-primary" data-toggle="modal" data-target="#myModal2" style="color:white">
+                   전자 사령장 
+              </button>
 	    </div>
 	  </header>
 
@@ -144,6 +149,34 @@
 		          <button type="button" id="gomovie" class="btn btn-default" data-dismiss="modal" >이동</button>
 		        </div>
 	        </form>
+	      </div>
+	    </div>
+	  </div>
+	  <div id="myModal2" class="modal fade" role="dialog">
+	    <div class="modal-dialog">
+
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          개인정보 입력
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+	        </div>
+	        <form id="myform_cert" action="ImageController">
+                        <div class="modal-body">
+                          <div class="form-group">
+                            <label for="name">이름:</label>
+                            <input type="text" class="form-control" name="name" id="name">
+                          </div>
+                          <div class="form-group">
+                            <label for="birth">생년월일(ex.920315):</label>
+                            <input type="text" class="form-control" name="birth" id="birth">
+                          </div>
+                        </div>
+                        <div class="modal-footer" >
+                          <button type="button" id="gocert" class="btn btn-default" data-dismiss="modal" >이동</button>
+                        </div>
+                </form>
 	      </div>
 	    </div>
 	  </div>

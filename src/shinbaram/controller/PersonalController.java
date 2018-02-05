@@ -20,6 +20,9 @@ import org.w3c.dom.NodeList;
 public class PersonalController extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		request.setCharacterEncoding("utf-8");
+			
 		String name = "";
 		String birth = "";
 		
@@ -29,6 +32,8 @@ public class PersonalController extends HttpServlet {
 		if((String) request.getParameter("birth") != null) {
 			birth = (String) request.getParameter("birth");
 		}
+		
+		System.out.println(name + birth);
 		
 		String ment = "";
 		String url = "";

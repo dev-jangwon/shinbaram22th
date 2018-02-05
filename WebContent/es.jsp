@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="kr">
   <head>
     <meta charset="utf-8">
@@ -57,11 +58,12 @@
 	
 	
 	<section id="services" class="bg-light">
-	 <div class="row">
-	          <div class="col-lg-12 text-center">
-	            <h3 class="section-heading text-uppercase">전자 사령증</h3>
-	          </div>
-	 </div>
+         <div class="row">
+                  <div class="col-lg-12 text-center">
+					<h3 class="section-heading text-uppercase" style="margin-bottom:30px;">전자 사령증</h3>
+                    <img class="img-fluid" src="./image/cert/${imgUrl}" alt="" style="display: block; margin-left: auto; margin-right: auto;">
+                  </div>
+         </div>
     </section>
    
     

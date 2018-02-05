@@ -84,4 +84,10 @@ $(".nextbtn").on('click',function(){
 
 $('#gomovie').on('click',function(){
   $('#myform').submit();
-})
+});
+
+$('#gocert').on('click',function(){
+	  $('#myform_cert').submit();
+	})
+
+
