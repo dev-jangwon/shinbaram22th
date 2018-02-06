@@ -55,6 +55,9 @@ public class ImageController extends HttpServlet {
 						ment = eElement.getElementsByTagName("ment").item(0).getTextContent();
 						url = eElement.getElementsByTagName("url").item(0).getTextContent();
 						String num = new String();
+						
+						temp = temp + 1;
+						
 						if ( temp < 10 ) {
 							num = "00" + temp;
 						} else if ( temp < 100 ) {
